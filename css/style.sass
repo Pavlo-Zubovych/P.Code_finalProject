@@ -1,5 +1,15 @@
 // $ venus: #998099
 // зробити колори змінними.
+$bodyColor: #fff
+$bgColor: #3AAFA9
+$txtColor: #333333
+$discontColor: #777777
+$underlinedColor: #d93f3f
+$lineColor: #000
+$btnColor: #DEF2F1
+$footerColor: #DEF2F1
+
+
 
 *
     margin: 0
@@ -7,7 +17,7 @@
     box-sizing: border-box
     font-family: 'Taviraj', serif
     font-weight: 400
-    color: #333333
+    color: $txtColor
 
 body
 
@@ -16,7 +26,7 @@ body
 .wrapper
     margin: 0 auto
     width: 1440px
-    background: #fff
+    background: $bodyColor
 
 header
     display: flex
@@ -43,7 +53,7 @@ nav
         font-size: 20px
 
         a
-            color: #333333
+            color: $txtColor
             font-size: 20px
             text-decoration: none
 
@@ -65,7 +75,7 @@ nav
     margin: 0 auto
 
 .background
-    background: #3AAFA9
+    background: $bgColor
 
 .background-fs-size
     position: relative
@@ -94,7 +104,7 @@ nav
 
     hr
         width: 95px
-        border: 1px solid #000
+        border: 1px solid $lineColor
         margin: 7.5px 0 24.5px 0
 
     a
@@ -109,7 +119,7 @@ nav
         margin: 32px 0 0 0
 
         button
-            background: #DEF2F1
+            background: $btnColor
             border: none
             border-radius: 5px
             font-size: 20px
@@ -137,7 +147,7 @@ nav
     left: 844px
 
     button
-        background: #DEF2F1
+        background: $btnColor
         border: none
         border-radius: 5px
         font-size: 20px
@@ -207,7 +217,7 @@ nav
     hr
         display: inline-block
         width: 171px
-        border: 1px solid #000000
+        border: 1px solid $lineColor
         margin-bottom: 10px
 
     h2
@@ -243,7 +253,7 @@ nav
             margin-top: 20px
             width: 205px
             height: 39px
-            background: #DEF2F1
+            background: $btnColor
             border-radius: 10px
             border: none
 
@@ -255,8 +265,8 @@ nav
     button
         height: 45px
         width: 123px
-        background: #DEF2F1
-        border: 1px solid #333333
+        background: $btnColor
+        border: 1px solid $txtColor
         margin: 32px auto 0
         display: block
 
@@ -264,7 +274,7 @@ nav
     font-size: 16px
     color: #777
     text-decoration: line-through
-    text-decoration-color: #D93F3F
+    text-decoration-color: $underlinedColor
 
 h4
     font-weight: 500
@@ -279,13 +289,13 @@ h4
 .long-line
     display: inline-block
     width: 171px
-    border: 1px solid #000000
+    border: 1px solid $lineColor
     margin-bottom: 10px
 
 .shot-line
     display: inline-block
     width: 65px
-    border: 1px solid #000000
+    border: 1px solid $lineColor
     margin-bottom: 10px
 
 .h2-size
@@ -300,14 +310,14 @@ h4
     #toTravel
         font-size: 16px
         text-align: center
-        color: #777777
+        color: $discontColor
         margin-top: 178px
 
     #where-to-travel
         font-size: 28px
         line-height: 40px
         text-align: center
-        color: #333333
+        color: $txtColor
         margin-top: 8px
 
     button
@@ -315,8 +325,8 @@ h4
         height: 58px
         display: block
         margin: 61px auto 0
-        background: #DEF2F1
-        border: 1px solid #333333
+        background: $btnColor
+        border: 1px solid $txtColor
 
 .background-th-r-n-size
     height: 479px
@@ -385,7 +395,7 @@ h4
             margin: 113px 0 0 0px
 
             button
-                background: #DEF2F1
+                background: $btnColor
                 border: none
                 border-radius: 10px
                 font-size: 20px
@@ -411,7 +421,7 @@ h4
             margin-top: 32px
 
         .under-h4
-            color: #777777
+            color: $discontColor
 
 .insta-block
     .background
@@ -467,17 +477,17 @@ h4
     //____________________________________
 
 footer
-    background: #DEF2F1
+    background: $footerColor
     height: 568px
     margin-top: -96px
     padding-top: 176px
 
     .footer-underline
         width: 60px
-        border: 1px solid #333
+        border: 1px solid $txtColor
 
     .wrapper
-        background: #DEF2F1
+        background: $footerColor
 
     .footer-container
         // margin-top: 200px
@@ -506,7 +516,7 @@ footer
 
         .footer-phone-block
             width: 257px
-            
+
             .icon-social-block
                 margin-top: 32px
                 img
@@ -526,9 +536,6 @@ footer
             .item-phone-row-footer
                 align-items: baseline
 
-            .footer-title-text
-                // margin-top: 8px
-
 
         .footer-lincs-block
 
@@ -538,7 +545,7 @@ footer
                 list-style: none
 
                 a
-                    color: #333333
+                    color: $txtColor
                     // font-size: 20px
                     line-height: 32px
                     text-decoration: none
