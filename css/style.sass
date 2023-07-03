@@ -279,7 +279,7 @@ nav
             margin-left: 0
 
         .a-add-card
-            // display: block
+            display: block
             width: 205px
             height: 39px
             background: $btnColor
@@ -293,6 +293,10 @@ nav
             margin-top: 20px
             margin-left: 0
             cursor: pointer
+            padding-top: 7px
+            text-decoration: none
+            
+
 
     button
         height: 45px
@@ -303,12 +307,12 @@ nav
         display: block
 
     .a-btn
-        height: 45px
-        width: 123px
-        background: $btnColor
-        border: 1px solid $txtColor
-        margin: 32px auto 0
-        display: block
+        &:hover
+            background: #cae7e6
+        &:active
+            background: #e4efef
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        
 
 .underlined
     font-size: 16px
