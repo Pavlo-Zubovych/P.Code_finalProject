@@ -6,8 +6,8 @@ $discontColor: #777777
 $underlinedColor: #d93f3f
 $lineColor: #000
 $btnColor: #DEF2F1
-// $bunColorHover:
-// $bunColorActive:
+$bunColorHover: #cae7e6
+$bunColorActive: #e4efef
 $footerColor: #DEF2F1
 
 *
@@ -295,24 +295,34 @@ nav
             cursor: pointer
             padding-top: 7px
             text-decoration: none
-            
-
-
-    button
+    .second-learnMore-size
+        display: block
         height: 45px
         width: 123px
-        background: $btnColor
-        border: 1px solid $txtColor
-        margin: 32px auto 0
-        display: block
+        font-size: 18px
+        padding-top: 7px
+
+.button-rectangle
+    text-align: center
+    // vertical-align: middle
+    // padding: 9px 0
+    background: $btnColor
+    border: 1px solid $txtColor
+    margin: 32px auto 0
+    cursor: pointer
+    text-decoration: none
+    &:hover
+        background: $bunColorHover
+    &:active
+        background: $bunColorActive
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
     .a-btn
         &:hover
-            background: #cae7e6
+            background: $bunColorHover
         &:active
-            background: #e4efef
+            background: $bunColorActive
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-        
 
 .underlined
     font-size: 16px
@@ -367,14 +377,21 @@ h4
         margin-top: 14px
         letter-spacing: 0.02em
 
-    button
+    // button
+    //     width: 160px
+    //     height: 58px
+    //     display: block
+    //     margin: 61px auto 0
+    //     background: $btnColor
+    //     border: 1px solid $txtColor
+    //     font-size: 16px
+    .third-descover-size
         width: 160px
         height: 58px
         display: block
-        margin: 61px auto 0
-        background: $btnColor
-        border: 1px solid $txtColor
         font-size: 16px
+        padding-top: 15px
+        margin: 61px auto 0
 
 .background-th-r-n-size
     height: 479px
